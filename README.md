@@ -1,4 +1,4 @@
-# A Reproduction Rep for Yarn PnP + Serverless Offline
+# A Reproduction Repo for Yarn PnP + Serverless Offline
 
 Pull the repo and run `yarn` to install the dependencies.
 
