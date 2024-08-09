@@ -1,4 +1,4 @@
-# A Reproduction Rep for Yarn PnP + Serverless Offline
+# A Reproduction Repo for Yarn PnP + Serverless Offline
 
 Pull the repo and run `yarn` to install the dependencies.
 
@@ -11,7 +11,8 @@ yarn works
 
 
 **Failing Scenario:**
-Fails when `--useInProcess` is not used. Simply do the following (serverless offline start):
+
+Fails when `--useInProcess` is not used. Simply do below or `serverless offline start`:
 ```
 yarn fails
 ```
