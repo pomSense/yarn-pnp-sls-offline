@@ -1,0 +1,35 @@
+app: test-repo
+service: my-service
+
+custom:
+  org: myOrg
+  defaultStage: dev
+
+  # ESBUILD
+  esbuild:
+    packager: 'yarn'
+
+  serverless-offline:
+    httpPort: 4400
+    lambdaPort: 4402
+    # When useChildProcesses is commented out, you will see the error
+    # useInProcess: true
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+
+package:
+  individually: true
+plugins:
+  - serverless-esbuild
+  - serverless-offline
+
+functions:
+  my-function:
+    handler: src/index.handler
+    name: my-function
+    events:
+      - httpApi: '*'
+
